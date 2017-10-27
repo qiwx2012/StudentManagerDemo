@@ -1,0 +1,50 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping ext="tps" type="DBN-PSQL" />
+      <mapping ext="tpe" type="DBN-PSQL" />
+      <mapping ext="pks" type="DBN-PSQL" />
+      <mapping ext="fnc" type="DBN-PSQL" />
+      <mapping ext="pkg" type="DBN-PSQL" />
+      <mapping ext="pkb" type="DBN-PSQL" />
+      <mapping ext="tpb" type="DBN-PSQL" />
+      <mapping ext="prc" type="DBN-PSQL" />
+      <mapping ext="trg" type="DBN-PSQL" />
+      <mapping ext="vw" type="DBN-SQL" />
+      <mapping pattern="test_model" type="PLAIN_TEXT" />
+      <mapping pattern="代理模式" type="PLAIN_TEXT" />
+      <mapping pattern="原型模式" type="PLAIN_TEXT" />
+      <mapping pattern="单例模式" type="PLAIN_TEXT" />
+      <mapping pattern="策略模式" type="PLAIN_TEXT" />
+      <mapping pattern="过滤器模式" type="PLAIN_TEXT" />
+      <mapping pattern="构造者模式" type="PLAIN_TEXT" />
+      <mapping pattern="README" type="PLAIN_TEXT" />
+      <mapping pattern="ReadMe" type="PLAIN_TEXT" />
+      <mapping pattern="状态模式" type="PLAIN_TEXT" />
+      <mapping pattern="观察者模式" type="PLAIN_TEXT" />
+      <mapping pattern="责任链模式" type="PLAIN_TEXT" />
+      <mapping pattern="迭代器模式" type="PLAIN_TEXT" />
+      <mapping pattern="享元模式" type="PLAIN_TEXT" />
+      <mapping pattern="BigIngeger解释" type="PLAIN_TEXT" />
+      <mapping pattern="dsd" type="PLAIN_TEXT" />
+      <mapping pattern="test_make" type="PLAIN_TEXT" />
+      <mapping pattern="中介模式" type="PLAIN_TEXT" />
+      <mapping pattern="适配器模式" type="PLAIN_TEXT" />
+      <mapping pattern="test" type="PLAIN_TEXT" />
+      <mapping pattern="命令模式" type="PLAIN_TEXT" />
+      <mapping pattern="设计模式" type="PLAIN_TEXT" />
+      <mapping pattern="组合模式" type="PLAIN_TEXT" />
+      <mapping pattern="模板模式" type="PLAIN_TEXT" />
+      <mapping pattern="桥接模式" type="PLAIN_TEXT" />
+      <mapping pattern="备忘录模式" type="PLAIN_TEXT" />
+      <mapping pattern="抽象工厂模式" type="PLAIN_TEXT" />
+      <mapping pattern="外观模式" type="PLAIN_TEXT" />
+      <mapping pattern="工厂模式" type="PLAIN_TEXT" />
+      <mapping pattern="装饰者模式" type="PLAIN_TEXT" />
+      <mapping pattern="test_style" type="PLAIN_TEXT" />
+      <mapping ext="so" type="PLAIN_TEXT" />
+      <mapping ext="keystore" type="PLAIN_TEXT" />
+      <removed_mapping ext="so" type="UNKNOWN" />
+    </extensionMap>
+  </component>
+</application>
