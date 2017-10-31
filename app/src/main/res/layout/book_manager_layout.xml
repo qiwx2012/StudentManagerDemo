@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtBookId"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:hint="图书Id" />
+
+    <EditText
+        android:id="@+id/edtBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="图书名称" />
+
+    <EditText
+        android:id="@+id/edtBookPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="图书价格" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="添加图书" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

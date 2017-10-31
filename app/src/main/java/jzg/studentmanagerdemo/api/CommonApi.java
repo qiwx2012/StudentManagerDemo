@@ -1,12 +1,15 @@
 package jzg.studentmanagerdemo.api;
 
+import java.util.List;
 import java.util.Map;
+
 
 import io.reactivex.Observable;
 import jzg.studentmanagerdemo.ResponseJson;
-import jzg.studentmanagerdemo.UserInfo;
-import retrofit2.Response;
-import retrofit2.http.FieldMap;
+import jzg.studentmanagerdemo.bean.Book;
+import jzg.studentmanagerdemo.bean.UserInfo;
+import retrofit2.http.Body;
+import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
@@ -22,7 +25,15 @@ import retrofit2.http.QueryMap;
 public interface CommonApi {
 
     //获取车的车系信息
-    @GET("/Struct1.x_Intro1/login.do")
+    @GET("/StudentManagerServer/login")
     Observable<ResponseJson<UserInfo>> login(@QueryMap Map<String, String> params);
 
+    //添加图书资料
+    @POST("/StudentManagerServer/AddBookServlet")
+    Observable<ResponseJson<List<Book>>> addBook(@Body Book book);
+
+    //删除图书资料
+    @FormUrlEncoded
+    @POST("/StudentManagerServer/DeleteBookServlet")
+    Observable<ResponseJson<List<Book>>> deleteBook(@Field("bookId") int bookId);
 }
