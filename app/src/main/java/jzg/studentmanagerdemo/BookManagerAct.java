@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.zhy.base.adapter.ViewHolder;
 import com.zhy.base.adapter.recyclerview.CommonAdapter;
@@ -96,7 +97,7 @@ public class BookManagerAct extends AppCompatActivity implements IBookView {
 
     @Override
     public void showError(String error) {
-
+        Toast.makeText(this, error, Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -108,7 +109,7 @@ public class BookManagerAct extends AppCompatActivity implements IBookView {
 
     @Override
     public void operateFail(List<Book> data) {
-
+        Toast.makeText(this, "操作失败", Toast.LENGTH_SHORT).show();
     }
 }
 
