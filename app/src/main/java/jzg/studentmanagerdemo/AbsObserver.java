@@ -71,7 +71,7 @@ public abstract class AbsObserver<T> extends DisposableObserver<ResponseJson<T>>
         if (e instanceof SocketTimeoutException) {
             error = "请求超时";
         }
-        error = "请检查您的网络是否连接";
+        error = e.getMessage();
         view.showError(error);//
         onError(error);
     }

@@ -1,13 +1,15 @@
-package jzg.studentmanagerdemo;
+package jzg.studentmanagerdemo.presenter;
 
 import android.util.Log;
-import android.widget.Toast;
 
 import java.util.Map;
 
 import io.reactivex.Observable;
+import jzg.studentmanagerdemo.AbsObserver;
+import jzg.studentmanagerdemo.BasePresenter;
+import jzg.studentmanagerdemo.presenter.view.ILoginView;
 import jzg.studentmanagerdemo.api.ApiManager;
-import retrofit2.Response;
+import jzg.studentmanagerdemo.bean.UserInfo;
 
 /**
  * @author: qiwx
@@ -39,7 +41,8 @@ public class LoginPresenter extends BasePresenter<ILoginView> {
 
             @Override
             public void onError(String error) {
-                Log.e("dd", "请求失败");
+                Log.e("dd", error);
+                getView().showError(error);
 
 
             }

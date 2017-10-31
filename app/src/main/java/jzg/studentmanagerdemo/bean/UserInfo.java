@@ -1,4 +1,4 @@
-package jzg.studentmanagerdemo;
+package jzg.studentmanagerdemo.bean;
 
 import java.io.Serializable;
 
